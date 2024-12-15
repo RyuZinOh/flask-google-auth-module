@@ -46,12 +46,12 @@ generate client tokens ids, and keys frm the services apis, frm google console
 
 #### 4. Set up the `.env` file
 ```ini
-SECRET_KEY=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-MAIL_USERNAME=
-MAIL_PASSWORD=
-MONGO_URI=
+SECRET_KEY,
+GOOGLE_CLIENT_ID,
+GOOGLE_CLIENT_SECRET,
+MAIL_USERNAME,
+MAIL_PASSWORD,
+MONGO_URI,
 ```
 
 #### 5. run the application now.
