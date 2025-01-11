@@ -56,17 +56,3 @@ MONGO_URI,
 
 #### 5. run the application now.
 ``python app.py``
-### User Flow
-
-1. **Login Prompt**: Upon accessing the application, the user is prompted to log in via Google.
-2. **Google Authentication**: The user is presented with a Google login screen, where they select the Gmail account they wish to authenticate with.
-3. **OTP Verification**: After the user selects their Google account, an OTP is sent to their Gmail address.
-4. **OTP Entry**: The user enters the OTP in the web application to complete the verification.
-5. **Successful Registration**: If the OTP is correct, the user’s information is stored in the MongoDB database, and they are successfully authenticated.
-6. **Subsequent Logins**: Users won’t need to go through the OTP process again once they are registered.
-
-### How It Works Internally
-
-- **Google OAuth Flow**: The app initiates the OAuth 2.0 flow, which redirects the user to Google's login page. After successful login, the user's Google account is authenticated.
-- **OTP Generation and Sending**: After login, the app generates a unique OTP and sends it to the email address via Gmail’s SMTP service.
-- **Database Registration**: After the user verifies the OTP, their details (such as email and name) are saved in the MongoDB database to track their authentication status.
